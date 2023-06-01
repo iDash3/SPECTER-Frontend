@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Modal from '@/components/utils/modal'
-import HeroImage from '@/public/images/hero-image-01.jpg'
+import HeroImage from '@/public/images/specter_bar.png'
 
 export default function Hero() {
 
@@ -31,14 +31,33 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4" data-aos="fade-up">Landing template for startups</h1>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+            <h1 className="h1 mb-4" data-aos="fade-up">SPECTER</h1>
+            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
+              Presentamos SPECTER, el asistente legal diseñado en México. 
+            </p>
+
+            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
+              Esta revolucionaria solución, impulsada por inteligencia artificial, 
+              transforma el panorama legal al combinar la experiencia de profesionales legales mexicanos con 
+              tecnología de vanguardia. Con disponibilidad las 24 horas del día, SPECTER  brinda un apoyo 
+              incomparable en investigación legal, redacción de documentos y gestión de casos. 
+            </p>
+
+            {/* <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
+              Su capacidad de aprendizaje automático permite analizar rápidamente grandes cantidades de 
+              información jurídica, ofreciendo resúmenes precisos y recomendaciones estratégicas. 
+              Ya seas un abogado experimentado o estés dando tus primeros pasos, la interfaz amigable 
+              y las funciones colaborativas de SPECTER mejorarán el trabajo en equipo y la toma de decisiones. 
+              Prepárate para elevar tu práctica legal con SPECTER , el asistente legal revolucionario que está 
+              dando forma al futuro del derecho en México. Únete a nosotros en este emocionante viaje hacia un futuro legal más brillante.
+            </p> */}
+
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Start free trial</a>
+                <a className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Empieza ahora</a>
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
-                <a className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">Learn more</a>
+                <a className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#0">Aplicaciones</a>
               </div>
             </div>
           </div>
@@ -52,7 +71,7 @@ export default function Hero() {
                 alt="Hero"
                 priority
               />
-              <a className="absolute group" href="#0" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} aria-controls="modal">
+              {/* <a className="absolute group" href="#0" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} aria-controls="modal">
                 <svg className="w-16 h-16 sm:w-20 sm:h-20 hover:opacity-75 transition duration-150 ease-in-out" viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg">
                   <defs>
                     <linearGradient x1="78.169%" y1="9.507%" x2="24.434%" y2="90.469%" id="a">
@@ -63,7 +82,7 @@ export default function Hero() {
                   <circle fill="url(#a)" cx="44" cy="44" r="44" />
                   <path className="fill-current text-purple-600" d="M52 44a.999.999 0 00-.427-.82l-10-7A1 1 0 0040 37V51a.999.999 0 001.573.82l10-7A.995.995 0 0052 44V44c0 .001 0 .001 0 0z" />
                 </svg>
-              </a>
+              </a> */}
             </div>
             
             {/* Modal */}
